@@ -12,6 +12,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navBrand} onClick={() => setPage("home")}>
+        <img src="fauji.png" alt="Fauji Masala Logo" />
         <span>Fauji Masala</span>
       </div>
 

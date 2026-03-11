@@ -20,10 +20,20 @@
   letter-spacing: -0.5px;
   cursor: pointer;
   user-select: none;
+  display: flex;
+  align-items: center;
 }
 
 .navBrand span {
   color: var(--cream);
+}
+
+.navBrand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 8px;
 }
 
 .navLinks {
@@ -67,37 +77,6 @@
   height: 2px;
   background: var(--amber);
   border-radius: 2px;
-}
-
-.cartPill {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 8px 14px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  color: var(--cream);
-  transition: all 0.2s;
-}
-
-.cartPill:hover {
-  border-color: var(--amber);
-}
-
-.cartBadge {
-  background: var(--amber);
-  color: #000;
-  font-size: 0.68rem;
-  font-weight: 700;
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 560px) {
