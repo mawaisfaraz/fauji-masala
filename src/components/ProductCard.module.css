@@ -1,0 +1,88 @@
+.productCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.productCard:hover {
+  border-color: rgba(212, 146, 42, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.productThumb {
+  width: 100%;
+  height: 172px;
+  background: linear-gradient(135deg, var(--surface), var(--border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+}
+
+.productBody {
+  padding: 15px;
+}
+
+.productCat {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.catGrain {
+  color: var(--amber);
+}
+.catDairy {
+  color: #74b9e8;
+}
+.catSpice {
+  color: #e07b72;
+}
+.catFood {
+  color: #4cd080;
+}
+.catOther {
+  color: var(--muted);
+}
+
+.productName {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 7px;
+}
+
+.productPrice {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--amber-lt);
+}
+
+.productPrice small {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.productActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+@media (max-width: 560px) {
+  .productThumb {
+    height: 130px;
+    font-size: 2.6rem;
+  }
+  .productName {
+    font-size: 0.92rem;
+  }
+}

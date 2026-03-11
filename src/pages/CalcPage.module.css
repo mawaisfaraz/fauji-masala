@@ -1,0 +1,121 @@
+.calcWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.calcCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 26px;
+}
+
+.cardTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  color: var(--cream);
+  margin-bottom: 5px;
+}
+
+.calcSubtitle {
+  font-size: 0.83rem;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.formulaBadge {
+  display: inline-block;
+  background: rgba(212, 146, 42, 0.07);
+  border: 1px solid rgba(212, 146, 42, 0.2);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  color: var(--amber-lt);
+  font-family: monospace;
+  margin-bottom: 24px;
+}
+
+.rangeVal {
+  text-align: right;
+  font-size: 0.83rem;
+  color: var(--amber-lt);
+  font-weight: 600;
+}
+
+.resultBox {
+  background: linear-gradient(
+    135deg,
+    rgba(212, 146, 42, 0.07),
+    rgba(240, 184, 74, 0.03)
+  );
+  border: 1px solid rgba(212, 146, 42, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.resultLbl {
+  font-size: 0.74rem;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.resultNum {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--amber), var(--amber-lt));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.resultUnit {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+.breakdown {
+  margin-top: 18px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.brow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.83rem;
+  color: var(--muted);
+}
+
+.brow:last-child {
+  border-bottom: none;
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.brow span:last-child {
+  color: var(--cream);
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .calcWrap {
+    grid-template-columns: 1fr;
+  }
+}
