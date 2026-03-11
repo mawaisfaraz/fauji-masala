@@ -79,11 +79,33 @@
   border-radius: 2px;
 }
 
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 16px;
+  }
+  .navBrand {
+    font-size: 1.2rem;
+  }
+  .navBrand img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 @media (max-width: 560px) {
-  .navBtn:not(.active) {
+  .nav {
+    padding: 0 12px;
+  }
+  .navBrand span {
     display: none;
   }
-  .nav {
-    padding: 0 14px;
+  .navBrand img {
+    width: 28px;
+    height: 28px;
+    margin-right: 0;
+  }
+  .navBtn {
+    font-size: 0.78rem;
+    padding: 7px 10px;
   }
 }

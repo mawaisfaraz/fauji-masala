@@ -37,33 +37,6 @@
   margin-bottom: 20px;
 }
 
-.emojiGrid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 5px;
-  margin-top: 7px;
-}
-
-.emojiOpt {
-  font-size: 1.35rem;
-  text-align: center;
-  padding: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  background: var(--surface);
-  border: 2px solid transparent;
-  transition: all 0.14s;
-  line-height: 1;
-}
-
-.emojiOpt:hover {
-  border-color: rgba(212, 146, 42, 0.5);
-}
-
-.emojiOpt.selected {
-  border-color: var(--amber);
-}
-
 .modalActions {
   display: flex;
   gap: 10px;
@@ -71,8 +44,55 @@
   justify-content: flex-end;
 }
 
+.preview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.previewRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--muted);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.previewRow span:last-child {
+  color: var(--cream);
+}
+
+.previewTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--amber-lt);
+  padding-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 22px;
+  }
+}
+
 @media (max-width: 560px) {
-  .emojiGrid {
-    grid-template-columns: repeat(6, 1fr);
+  .modal {
+    padding: 18px;
+    border-radius: 12px;
+  }
+  .modalTitle {
+    font-size: 1.1rem;
+  }
+  .modalActions {
+    flex-direction: column-reverse;
+  }
+  .modalActions button {
+    width: 100%;
+    justify-content: center;
   }
 }

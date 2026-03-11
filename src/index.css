@@ -13,18 +13,18 @@ html {
 }
 
 :root {
-  --bg:       #0f0e0c;
-  --surface:  #1a1915;
-  --card:     #211f1a;
-  --border:   #2e2b24;
-  --amber:    #d4922a;
+  --bg: #0f0e0c;
+  --surface: #1a1915;
+  --card: #211f1a;
+  --border: #2e2b24;
+  --amber: #d4922a;
   --amber-lt: #f0b84a;
-  --cream:    #e8dfc8;
-  --muted:    #7a7265;
-  --red:      #c0392b;
-  --green:    #27ae60;
-  --text:     #e0d8c8;
-  --r:        12px;
+  --cream: #e8dfc8;
+  --muted: #7a7265;
+  --red: #c0392b;
+  --green: #27ae60;
+  --text: #e0d8c8;
+  --r: 12px;
 }
 
 body {
@@ -49,8 +49,14 @@ body::before {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0);    }
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section {
@@ -210,10 +216,20 @@ input[type="range"]::-webkit-slider-thumb {
   .section {
     padding: 24px 14px 52px;
   }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .btn-primary {
+    font-size: 0.82rem;
+    padding: 9px 16px;
+  }
 }
 
 @media (max-width: 560px) {
   .form-row {
     grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 1.2rem;
   }
 }
